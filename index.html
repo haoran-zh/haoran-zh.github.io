@@ -55,7 +55,7 @@
                 <h2>Research</h2>
                 <p>
                   I did resaerch in AI for healthcare in my undergrad study, and now I am working on federated learning.
-                  My current project is about multiple model federated learning (local clients handle multiple FL models at the same time).
+                  My current project is about multiple model federated learning (MMFL): local clients handle multiple FL models at the same time.
                   In this scenario, how to select clients, and assign them with different training tasks is really important to improve the performance of the system.
                   <!--<span class="highlight">highlighted</span>. highlight something if need-->
                 </p>
@@ -65,6 +65,28 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+            <tr>
+              <td style="padding:10px 20px 10px 20px;width:100%;vertical-align:middle">
+                <a href="data/ICDCS_Poster_MMFL_optimal_sampling__gradient_norm_.pdf">
+                  <span class="papertitle">Poster: Optimal Variance-Reduced Client Sampling for Multiple Model Federated Learning</span>
+                </a>
+                <br>
+                <strong>Haoran Zhang</strong>,
+                <a href="https://www.linkedin.com/in/zekaili/">Zekai Li</a>,
+                <a href="https://www.linkedin.com/in/zejun-gong/">Zejun Gong</a>,
+                  <a href="https://mariesiewhuilin.weebly.com/">Marie Siew</a>,
+                  <a href="https://www.andrew.cmu.edu/user/cjoewong/">Carlee Joe-Wong</a>,
+                <a href="https://scholar.google.com/citations?user=Tvto5qkAAAAJ&hl=en">Rachid El-Azouzi</a>
+                <br>
+                accepted by <em>ICDCS</em>, 2024
+                <br>
+                <a href="https://www.dropbox.com/scl/fi/pxpur63swok2yj6okfxo6/ICDCS_appendixFinal.pdf?rlkey=p40018mfpobjk1rx009miqi9g&e=1&dl=0">Supplementary material</a>
+                <p>
+                  This paper explores an MMFL scenario where each client is restricted to training only one model per global round due to limited computational resources.
+                  We propose a client sampling and task assignment method that theoretically minimizes the variance of global updates. The method achieves a 30% higher accuracy than the baseline.
+                </p>
+              </td>
+            </tr>
             <tr>
               <td style="padding:10px 20px 10px 20px;width:100%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2404.13841">
@@ -86,8 +108,7 @@
                 <p>
                   In the real-world scenario, clients could contribute to multiple federated learning models' training at the same time.
                   For example, a company may update their keyboard prediction model, speech recognition model, and other more federated learning models on your phone.
-                  This paper explores a scenario where each client is restricted to training only one model per global round due to limited computational resources.
-                  We propose a client-task assignment strategy to preserve the fairness across multiple training tasks under such constraints.
+                  In this paper, we propose a client-task assignment strategy to preserve the fairness across multiple training tasks.
                 </p>
               </td>
             </tr>
